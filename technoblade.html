@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <br>
+  <div class="bloup">
+      <a href="index.html"><img src="icon.png" width="112" height="28"></a>
+
+
+    <section class="section">
+     <button class="button">Accueil</button>
+    
+      <div class="dropdown">
+        <div class="dropdown-trigger">
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+            <span>Autres 🔽</span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+          <div class="dropdown-content">
+            <a href="maj.html" class="dropdown-item">
+              Mises à jour
+            </a>
+            <a href="technoblade.html" class="dropdown-item">
+              Technoblade
+            </a>
+            <a href="https://discord.gg/W3jr4E5nfx" class="dropdown-item">
+              Discord
+            </a>
+            <a href="#" class="dropdown-item">
+              App mobile
+            </a>
+            <hr class="dropdown-divider">
+            <a href="dead.html" class="dropdown-item">
+              Lien mort
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+  <body>
+    <section class="section">
+    </div>
+
+
+  <div class="box">
+    <article class="media">
+      <div class="media-left">
+        <figure class="image is-64x64">
+          <img src="profil.png" alt="Image">
+        </figure>
+      </div>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>[Dev] Shyno</strong> <small>@Shyno</small>
+            <br>
+            Technoblade, né le 1er juin 1999 et mort en juin 2022, est un vidéaste et streamer américain.
+
+Connu pour son contenu sur YouTube lié au jeu vidéo Minecraft qu'il créait depuis 2013 et ses collaborations avec d'autres vidéastes et streamers sur Twitch, il était reconnu pour son bon niveau en joueur contre joueur et faisait partie d'un serveur privé créé par le vidéaste américain Dream. Il était également proche des administrateurs du serveur Minecraft Hypixel.
+
+Il meurt d'un cancer en juin 2022, à l'âge de 23 ans. Sa chaîne est alors suivie par plus de 10 millions de personnes. <br>
+
+
+<strong>TECHNOBLADE NEVER DIES !🐷👑</strong>
+          </p>
+        </div>
+        <nav class="level is-mobile">
+          <div class="level-left">
+            <a class="level-item" aria-label="reply">
+              <span class="icon is-small">
+                <i class="fas fa-reply" aria-hidden="true"></i>
+              </span>
+            </a>
+            <a class="level-item" aria-label="retweet">
+              <span class="icon is-small">
+                <i class="fas fa-retweet" aria-hidden="true"></i>
+              </span>
+            </a>
+            <a class="level-item" aria-label="like">
+              <span class="icon is-small">
+                <i class="fas fa-heart" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </article>
+  </div>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/DPMluEVUqS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </body>
+</section>
+<script>
+  var triggers =
+      document.querySelectorAll(".dropdown .dropdown-trigger");
+
+  triggers.forEach(function (trigger) {
+      var isopen = false;
+      trigger.addEventListener('click', function(){
+          if(isopen){
+              trigger.parentElement.classList.remove("is-active");
+              isopen = false;
+          }else{
+              trigger.parentElement.classList.add("is-active");
+              isopen = true;
+          }
+      })
+  });
+</script>
+  
+</html>

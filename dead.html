@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <br>
+  <div class="bloup">
+      <a href="index.html"><img src="icon.png" width="112" height="28"></a>
+
+
+    <section class="section">
+     <button class="button">Accueil</button>
+    
+      <div class="dropdown">
+        <div class="dropdown-trigger">
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+            <span>Autres 🔽</span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+          <div class="dropdown-content">
+            <a href="#" class="dropdown-item">
+              Mises à jour
+            </a>
+            <a href="#" class="dropdown-item">
+              Technoblade
+            </a>
+            <a href="#" class="dropdown-item">
+              Discord
+            </a>
+            <a href="#" class="dropdown-item">
+              App mobile
+            </a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">
+              Lien mort
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <body>
+        <section class="section">
+        <div class="box">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <img src="profil.png" alt="Image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>[Dev] Shyno</strong> <small>@Shyno</small>
+                    <br>
+                    Bonjour, il est possible qu'un lien soit mort si cela est le cas merci d'appuyer sur le bouton rouge (discord) et allez dans le salon #lien-mort et faite un screen et donner l'indication précise.
+                  </p>
+                </div>
+                <nav class="level is-mobile">
+                  <div class="level-left">
+                    <a class="level-item" aria-label="reply">
+                      <span class="icon is-small">
+                        <i class="fas fa-reply" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                    <a class="level-item" aria-label="retweet">
+                      <span class="icon is-small">
+                        <i class="fas fa-retweet" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                    <a class="level-item" aria-label="like">
+                      <span class="icon is-small">
+                        <i class="fas fa-heart" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </article>
+          </div>
+          <button class="button is-danger">Discord</button>
+        
+          </body>
+        </section>
+<script>
+  var triggers =
+      document.querySelectorAll(".dropdown .dropdown-trigger");
+
+  triggers.forEach(function (trigger) {
+      var isopen = false;
+      trigger.addEventListener('click', function(){
+          if(isopen){
+              trigger.parentElement.classList.remove("is-active");
+              isopen = false;
+          }else{
+              trigger.parentElement.classList.add("is-active");
+              isopen = true;
+          }
+      })
+  });
+</script>
+  
+</html>

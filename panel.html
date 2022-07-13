@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <br>
+  <div class="bloup">
+      <a href="index.html" ><img src="icon.png" width="112" height="28"></a>
+
+
+    <section class="section">
+     <a href="index.html" class="button">Accueil</a>
+    
+      <div class="dropdown">
+        <div class="dropdown-trigger">
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+            <span>Autres 🔽</span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+          <div class="dropdown-content">
+            <a href="maj.html" class="dropdown-item">
+              Mises à jour
+            </a>
+            <a href="technoblade.html" class="dropdown-item">
+              Technoblade
+            </a>
+            <a href="https://discord.gg/W3jr4E5nfx" class="dropdown-item">
+              Discord
+            </a>
+            <a href="#" class="dropdown-item">
+              App mobile
+            </a>
+            <hr class="dropdown-divider">
+            <a href="dead.html" class="dropdown-item">
+              Lien mort
+            </a>
+          </div>
+        </div>
+        </div>
+        </section>
+      
+  <body>
+    <section class="section">
+      <div class="bloup">
+      <a href="anime.html" class="button is-info is-rounded">Animes (5 dispo)</a>    </div>
+  <br>
+  <div class="bloup">
+      <a href="movie.html" class="button is-danger is-rounded">Film (4 dispo)</a>
+  </div>
+  <br>
+  <div class="bloup">
+      <a href="animePic.html" class="button is-success is-rounded">Animes images (0 dispo)</a>
+  </div>
+    </div>
+
+  
+  </body>
+</section>
+<script>
+  var triggers =
+      document.querySelectorAll(".dropdown .dropdown-trigger");
+
+  triggers.forEach(function (trigger) {
+      var isopen = false;
+      trigger.addEventListener('click', function(){
+          if(isopen){
+              trigger.parentElement.classList.remove("is-active");
+              isopen = false;
+          }else{
+              trigger.parentElement.classList.add("is-active");
+              isopen = true;
+          }
+      })
+  });
+</script>
+  
+</html>
